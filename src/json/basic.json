@@ -1,0 +1,72 @@
+[
+  {
+    "id": "10",
+    "uuid": "c586ad9d-e550-4eea-966a-fb618bb8d089    ",
+    "type": "choicelist",
+    "parent": "",
+    "properties": {
+      "label": "What are you doing to continually make progress towards your goal?",
+      "name": "objective_progress_comparison",
+      // or do children go outside????
+      "children": [
+        {
+          "defaultChecked": true,
+          "label": "Eligibility or enrollment data",
+          "value": "objective_enrollment_data"
+        },
+        {
+          "label": "Survey data", 
+          "value": "objective_survey_data" 
+        },
+        {
+          "label": "Another data source", 
+          "value": "objective_other_data"
+        }
+      ]
+    }
+  },
+  {
+    "id": "10",
+    "uuid": "5ade9002-96c2-4c8a-b17d-682ae8c1af76",
+    "type": "textfield",
+    "parent": "",
+    "properties": {
+      "label": "What are you doing to continually make progress towards your goal?",
+      "name": "objective_progress_comparison",
+      "multiline": true
+    }
+  },
+  {
+    "id": "11",
+    "uuid": "a21729a8-67ae-4e8e-9727-30b759624fa2",
+    "type": "textfield",
+    "parent": "",
+    "properties": {
+      "label": "What are you doing to continually make progress towards your goal?",
+      "name": "objective_progress_action",
+      "multiline": true
+    }
+  },
+  {
+    "id": "12",
+    "uuid": "73972892-bfbf-42c4-a38c-1f4de9cbca1d",
+    "type": "textfield",
+    "parent": "",
+    "properties": {
+      "label": "Anything else you'd like to tell us about this goal?",
+      "name": "objective_additional_information",
+      "multiline": true
+    }
+  },
+  {
+    "id": "13",
+    "uuid": "71d1ca8f9-8a85-425c-9feb-d9399074df11",
+    "type": "upload",
+    "parent": "",
+    "properties": {
+      "label": "Do you have any supporting documentation? (Optional)",
+      "name": "objective_supporting_documentation",
+      "buttonLabel": "Browse"
+    }
+  }
+]
