@@ -1,0 +1,77 @@
+[
+{
+  "id": "2-b-1",
+  "type": "textarea",
+  "properties": {
+    "question_text": "Briefly describe your goal.",
+    "example_text": "For example: Enroll 75% of eligible children in the CHIP program.",
+    "minlength": 10,
+    "maxlength": 7500
+  }
+},
+{
+  "id": "2-b-2",
+  "type": "radio",
+  "properties": {
+    "question_text": "Briefly describe your goal.",
+    "options": [
+        {
+            "text": "New goal",
+            "value": "new"
+        },
+        {
+            "text": "Continuing goal",
+            "value": "continuing"
+        },
+        {
+            "text": "Discontinued goal",
+            "value": "discontinued"
+        }
+    ]
+  }
+},
+{
+  "id": "frameset-2-b-3+4",
+  "type": "fieldset",
+  "properties": {
+    "text": "Define the numerator you're measuring",
+    "questions": [
+        {
+            "id": "2-b-3",
+            "type": "textarea",
+            "properties": {
+            "question_text": "Which population are you measuring in the numerator?",
+            "example_text": "For example: The number of children enrolled in CHIP in the last federal fiscal year.",
+            "minlength": 10,
+            "maxlength": 7500
+      },
+        {
+            "id": "2-b-4",
+            "type": "text_short",
+            "properties": {
+            "question_text": "Numerator (total number):",
+            "minlength": 1,
+            "maxlength": 32
+      }
+    ]
+  }
+}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Message Tadhg O'Higgins (18F - SF - he):tiger2:
+
