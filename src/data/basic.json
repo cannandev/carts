@@ -21,23 +21,32 @@
       "name": "goal_type",
       "children": [
         {
-          "defaultChecked": true,
-          "label": "New goal",
-          "value": "new"
+          "type": "radio",
+          "properties": {
+            "defaultChecked": true,
+            "label": "New goal",
+            "value": "new"
+          }
         },
         {
-          "label": "Continuing goal", 
-          "value": "continuing" 
+          "type": "radio",
+          "properties": {
+            "label": "Continuing goal", 
+            "value": "continuing"
+          }
         },
         {
-          "label": "Discontinued goal", 
-          "value": "discontinued"
+          "type": "radio",
+          "properties": {
+            "label": "Discontinued goal", 
+            "value": "discontinued"
+          }
         }
       ]
     }
   }, 
   {
-    "id": "3",  // I would like this to be a fieldset, but numbering...
+    "id": "3",
     "uuid": "9f907d9c-a460-4a4e-a9e1-e79dfe91737e",
     "type": "textfield",
     "properties": {
@@ -53,14 +62,14 @@
     "uuid": "c8f93c92-1d1d-4cf5-b1ca-b54cb659ed05",
     "type": "textfield",
     "properties": {
-      "label": "Numerator (total number):",
-      "name": "goal_numberator",
-      "size": "medium",
+      "label": "Numerator (Total number):",
+      "name": "goal_numerator",
+      "size": "small",
       "numeric": true
     }
   },
   {
-    "id": "5",  // I would like this to be a fieldset, but numbering...
+    "id": "5",
     "uuid": "8cc86611-a4b5-4097-9f48-6cce5f563bbc",
     "type": "textfield",
     "properties": {
@@ -78,7 +87,7 @@
     "properties": {
       "label": "Denominator (Total number)",
       "name": "goal_denominator",
-      "size": "medium",
+      "size": "small",
       "numeric": true
     }
   },
@@ -93,37 +102,41 @@
     }
   },
   {
-    "id": "8", // um, how do we handle numbering for fieldsets?
+    "id": "8", 
     "uuid": "55c4f5be-dfd1-41ea-98ef-e64f1322c6e2",
-    "type": "fieldset",
+    "type": "daterange",
     "properties": {
       "label": "What is the range",
       "name": "goal_date_range",
-      "children": [ // should children have properties too? uuid?
+      "children": [ 
         { 
-          "label": "Start", // Should these two inputs have their own # id?
-          "name": "goal_date_range_start",
-          "hint": "From mm/yyyy to mm/yyyy",
           "type": "datefield",
-          "month": true,
-          "day": false,
-          "year": true
+          "properties": {
+              "label": "Start", 
+              "name": "goal_date_range_start",
+              "hint": "From mm/yyyy to mm/yyyy",
+              "month": true,
+              "day": false,
+              "year": true
+          }
         },
-        { 
-           "label": "End",
-          "name": "goal_date_range_end",
-          "hint": "From mm/yyyy to mm/yyyy",
+        {
           "type": "datefield",
-          "month": true,
-          "day": false,
-          "year": true
+          "properties": {
+            "label": "End", 
+            "name": "goal_date_range_end",
+            "hint": "From mm/yyyy to mm/yyyy",
+            "month": true,
+            "day": false,
+            "year": true
+          }
         }
       ]
     }
   },
   {
     "id": "9",
-    "uuid": "c586ad9d-e550-4eea-966a-fb618bb8d089    ",
+    "uuid": "c586ad9d-e550-4eea-966a-fb618bb8d089",
     "type": "choicelist",
     "properties": {
       "label": "Which data source did you use?",

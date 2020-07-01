@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import data from "./data/basic.json"
+import Text from "./components/Text/Text"
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const FormElem = props => {
+  if (props.type === "textfield") {
+    return <Text {...props}/>
+  }
+  return props.type
 }
 
-export default App;
+const App = _ => {
+  return (
+    <div className="App">
+      <h1>Section 2B</h1>
+      <ol>
+      {
+        data.map(item => (
+          <li>
+              <FormElem 
+                type={item.type} 
+                label={item.properties.label} 
+                hint={item.properties.hint}
+                numeric={item.properties.numeric}
+                size={item.properties.size}
+                multiline={item.properties.multiline}
+              />
+          </li>
+        ))
+      }
+      </ol>
+    </div>
+  )
+}
+
+export default App
