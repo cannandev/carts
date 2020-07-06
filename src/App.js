@@ -19,6 +19,7 @@ const App = _ => {
         data.map(item => (
           <li>
               <FormElem 
+                key = {item.uuid}
                 type={item.type} 
                 label={item.properties.label} 
                 hint={item.properties.hint}
