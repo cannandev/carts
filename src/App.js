@@ -1,14 +1,7 @@
 import React from 'react'
 import data from "./data/basic.json"
-import Text from "./components/Text/Text"
 import './App.css'
-
-const FormElem = props => {
-  if (props.type === "textfield") {
-    return <Text {...props}/>
-  }
-  return props.type
-}
+import { FormElem } from "./components/FormElem"
 
 const App = _ => {
   return (
