@@ -6,19 +6,21 @@ import { FormElem } from "./components/FormElem"
 const App = _ => {
   return (
     <div className="App">
-      <h1>Section 2B</h1>
+      <h1>Section {data[0].id}</h1>
       <ol>
       {
-        data.map(item => (
+        data[0].properties.children.map(item => (
           <li>
               <FormElem 
-                key = {item.uuid}
+                key={item.uuid}
                 type={item.type} 
                 label={item.properties.label} 
                 hint={item.properties.hint}
                 numeric={item.properties.numeric}
                 size={item.properties.size}
                 multiline={item.properties.multiline}
+                name={item.name}
+                children={item.children}
               />
           </li>
         ))
