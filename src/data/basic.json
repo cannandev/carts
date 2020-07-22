@@ -1,20 +1,23 @@
 [{
   "id": "2B",
   "type": "section",
-  "routeName": "section/2B",
   "properties": {
     "name": "Section 2B: State Plan Goals and Objectives",
+    "description": "Your performance goals should match those reflected in your CHIP State Plan, Section 9. If your objectives or goals are different, submit a State Plan Amendment (SPA) to reconcile these differences.",
+    "showTabs": true,
     "children": [
       {
         "id": "1",
+        "uuid": "2090d15c-3272-4e11-9616-0c8a0dfff556",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Briefly describe your goal.",
           "hint": "For example: Enroll 75% of eligible children in the CHIP program.",
           "name": "goal_description",
           "multiline": true,
-          "title": "Define your numerator you’re measuring"
+          "title": "Define your numerator you’re measuring",
+          "hasPreviousYear": true
         }
       },
       {
@@ -27,6 +30,7 @@
           "name": "goal_type",
           "value": "",
           "hasChildren": true,
+          "hasPreviousYear": true,
           "children": [
             {
               "defaultChecked": true,
@@ -48,21 +52,22 @@
         "id": "3",
         "uuid": "9f907d9c-a460-4a4e-a9e1-e79dfe91737e",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Which population are you measuring in the numerator?",
           "hint": "For example: The number of children enrolled in CHIP in the last federal fiscal year.",
           "name": "goal_numerator_definition",
           "multiline": true,
-          "title": "Define your numerator you’re measuring"
+          "title": "Define your numerator you’re measuring",
+          "hasPreviousYear": true
         }
       },  
       {
         "id": "4",  
         "uuid": "c8f93c92-1d1d-4cf5-b1ca-b54cb659ed05",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Numerator (Total number):",
           "name": "goal_numerator",
           "size": "small",
@@ -73,46 +78,50 @@
         "id": "5",
         "uuid": "8cc86611-a4b5-4097-9f48-6cce5f563bbc",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Which population are you measuring in the denominator?",
           "hint": "For example: The total number of eligible children in the last federal fiscal year.",
           "name": "goal_denominator_definition",
           "multiline": true,
-          "title": "Define your denominator you’re measuring"
+          "title": "Define your denominator you’re measuring",
+          "hasPreviousYear": true
         }
       },
       {
         "id": "6",
         "uuid": "60e05629-a0c0-4a5d-8026-ce42952c78d8",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Denominator (Total number)",
           "name": "goal_denominator",
           "size": "small",
-          "numeric": true
+          "numeric": true,
+          "hasPreviousYear": true
         }
       },
       {
         "id": "7",
         "uuid": "484c1190-68d5-4249-b46d-919bf5cec41f",
         "type": "calculator",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Percentage",
           "hint": "Auto-calculated",
-          "name": "goal_percentage"
+          "name": "goal_percentage",
+          "hasPreviousYear": true
         }
       },
       {
         "id": "8", 
         "uuid": "55c4f5be-dfd1-41ea-98ef-e64f1322c6e2",
         "type": "daterange",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "What is the range",
           "name": "goal_date_range",
+          "hasPreviousYear": true,
           "children": [ 
             { 
               "type": "datefield",
@@ -143,10 +152,11 @@
         "id": "9",
         "uuid": "c586ad9d-e550-4eea-966a-fb618bb8d089",
         "type": "radios",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Which data source did you use?",
           "name": "goal_data_source",
+          "hasPreviousYear": true,
           "children": [
             {
               "defaultChecked": true,
@@ -168,8 +178,9 @@
         "id": "10",
         "uuid": "9de55e16-b518-403d-a549-5923d740b7dd",
         "type": "textfield",
-        "value": "",
+        "hasPreviousYear": true,
         "properties": {
+          "value": "",
           "label": "How did your progress towards your goal last year compare to your previous year’s progress?",
           "name": "goal_progress_comparison",
           "multiline": true
@@ -179,8 +190,8 @@
         "id": "11",
         "uuid": "a21729a8-67ae-4e8e-9727-30b759624fa2",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "What are you doing to continually make progress towards your goal?",
           "name": "goal_progress_action",
           "multiline": true
@@ -190,8 +201,8 @@
         "id": "12",
         "uuid": "73972892-bfbf-42c4-a38c-1f4de9cbca1d",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Anything else you'd like to tell us about this goal?",
           "name": "goal_additional_information",
           "multiline": true
@@ -201,8 +212,8 @@
         "id": "13",
         "uuid": "71d1ca8f9-8a85-425c-9feb-d9399074df11",
         "type": "upload",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Do you have any supporting documentation? (Optional)",
           "name": "goal_supporting_documentation",
           "buttonLabel": "Browse"
@@ -215,13 +226,15 @@
   "id": "3A",
   "type": "section",
   "properties": {
+    "name": "Section 3A: Program Outreach",
+    "showTabs": false,
     "children": [
       {
         "id": "1",
         "uuid": "a98f7f6d-1ea9-407a-b175-d21015450264e",
         "type": "textfield",
-        "value": "",
         "properties": {
+          "value": "",
           "label": "Briefly describe your goal.",
           "hint": "For example: Enroll 75% of eligible children in the CHIP program.",
           "name": "goal_description",
@@ -232,36 +245,14 @@
       {
         "id": "2",
         "uuid": "9020d15c-3272-4e11-9616-0c8a0dfff556",
-        "type": "radios",
-        "value": "",
+        "type": "textfield",
         "properties": {
-          "label": "What type of goal is it?",
-          "hint": "For example: Enroll 75% of eligible children in the CHIP program.",
+          "value": "",
+          "label": "Lorem ipsum",
+          "hint": "Lorem ipsum",
           "name": "goal_type",
-          "children": [
-            {
-              "type": "radio",
-              "properties": {
-                "defaultChecked": true,
-                "label": "New goal",
-                "value": "new"
-              }
-            },
-            {
-              "type": "radio",
-              "properties": {
-                "label": "Continuing goal", 
-                "value": "continuing"
-              }
-            },
-            {
-              "type": "radio",
-              "properties": {
-                "label": "Discontinued goal", 
-                "value": "discontinued"
-              }
-            }
-          ]
+          "multiline": true,
+          "title": "Define your numerator you’re measuring"
         }
       }
     ]
