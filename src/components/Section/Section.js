@@ -7,7 +7,7 @@ export const Section = props => {
   const showTabs = props.properties.showTabs
   const formElements = props.properties.children
   const ConditionalTabs = ({ condition, wrapper, children }) => 
-    condition ? wrapper(children) : children;
+    condition ? children : wrapper(children);
   return (
     <div className="section-content">
       <ConditionalTabs
