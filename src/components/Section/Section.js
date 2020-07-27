@@ -4,8 +4,8 @@ import { FormElem } from "../FormElem"
 import { Button } from '@cmsgov/design-system-core'
 
 export const Section = props => {
-  const showTabs = props.properties.showTabs
-  const formElements = props.properties.children
+  const showTabs = true // replace with count of subsections
+  const formElements = props.children
   const ConditionalTabs = ({ condition, wrapper, children }) => 
     condition ? children : wrapper(children);
   return (
@@ -21,8 +21,8 @@ export const Section = props => {
       >
         <div className="section-content">
           <form>
-            <p>{props.properties.description}</p>
-            <h2>{props.properties.name}</h2>
+            <p>{props.description}</p>
+            <h2>{props.name}</h2>
             <ol>
               {
                 formElements.map(elem => (

@@ -13,8 +13,7 @@ const App = _ => {
           <PageInfo />
           <div className="print-only">
           </div>
-          <Section {...data[0]}/>
-          <Section {...data[1]}/>
+          <Section {...data[0][0]}/>
         </div>
       </div>
     </div>
