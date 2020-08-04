@@ -4,12 +4,12 @@ import { Radios } from './Radios'
 
 export const FormElem = props => {
   switch (props.type) {
-    case "textfield":
-      return <Text {...props}/>
+    case "text_short":
+      return <Text {...props} />
 
-    case "radios":
-      return <Radios {...props}/>
-  
+    case "text_long":
+      return <Text multiline {...props} />
+
     default:
       return props.type
   }

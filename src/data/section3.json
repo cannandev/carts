@@ -6,11 +6,12 @@
     "ordinal": 3,
     "id": "2020-03",
     "type": "section",
-    "title": null,
+    "title": "Program Operations",
     "subsections": [
       {
         "type": "subsection",
         "id": "2020-03-a",
+        "route": "section/3a",
         "title": "Program Outreach",
         "parts": [
           {
@@ -19,19 +20,20 @@
             "questions": [
               {
                 "id": "2020-03-a-01-01",
-                "text": "Have you changed your outreach methods in the last federal fiscal year?",
+                "label": "Have you changed your outreach methods in the last federal fiscal year?",
                 "type": "radio",
                 "answer": {
                   "options": {
                     "Yes": "yes",
                     "No": "no"
                   },
-                  "entry": null
+                  "entry": null,
+                  "previous_year": true
                 },
                 "questions": [
                   {
                     "id": "2020-03-a-01-01-a",
-                    "text": "What are you doing differently?",
+                    "label": "What are you doing differently?",
                     "type": "text_long",
                     "conditional_display": {
                       "type": "conditional_display",
@@ -57,7 +59,7 @@
               },
               {
                 "id": "2020-03-a-01-02",
-                "text": "Are you targeting specific populations in your outreach efforts?",
+                "label": "Are you targeting specific populations in your outreach efforts?",
                 "hint": "For example: minorities, immigrants, or children living in rural areas.",
                 "type": "radio",
                 "answer": {
@@ -70,7 +72,7 @@
                 "questions": [
                   {
                     "id": "2020-03-a-01-02-a",
-                    "text": "Have these efforts been successful? How have you measured the effectiveness of your outreach efforts?",
+                    "label": "Have these efforts been successful? How have you measured the effectiveness of your outreach efforts?",
                     "type": "text_long",
                     "conditional_display": {
                       "type": "conditional_display",
@@ -96,7 +98,7 @@
               },
               {
                 "id": "2020-03-a-01-03",
-                "text": "What methods have been most effective in reaching low-income, uninsured children?",
+                "label": "What methods have been most effective in reaching low-income, uninsured children?",
                 "hint": "For example: TV, school outreach, or word of mouth.",
                 "type": "text_long",
                 "answer": {
@@ -105,7 +107,7 @@
               },
               {
                 "id": "2020-03-a-01-04",
-                "text": "Anything else you’d like to add about your outreach efforts?",
+                "label": "Anything else you’d like to add about your outreach efforts?",
                 "type": "text_long",
                 "answer": {
                   "entry": null
@@ -120,8 +122,9 @@
       {
         "type": "subsection",
         "id": "2020-03-d",
+        "route": "section/3d",
         "title": "Cost Sharing (Out-of-Pocket Costs)",
-        "text": "Cost sharing is the share of costs that CHIP enrollees pay out of pocket. Cost sharing can include enrollment fees, premium fees, deductibles, coinsurance, copayments, and any other out-of-pocket costs. States can choose to require cost sharing or not.",
+        "label": "Cost sharing is the share of costs that CHIP enrollees pay out of pocket. Cost sharing can include enrollment fees, premium fees, deductibles, coinsurance, copayments, and any other out-of-pocket costs. States can choose to require cost sharing or not.",
         "parts": [
           {
             "id": "2020-03-d-01",
@@ -129,7 +132,7 @@
             "questions": [
               {
                 "id": "2020-03-d-01-01",
-                "text": "Does your state require cost sharing?",
+                "label": "Does your state require cost sharing?",
                 "type": "radio",
                 "answer": {
                   "entry": null,
@@ -141,7 +144,7 @@
               },
               {
                 "id": "2020-03-d-01-02",
-                "text": "Who tracks cost sharing to ensure families don’t pay more than the 5% aggregate household income in a year?",
+                "label": "Who tracks cost sharing to ensure families don’t pay more than the 5% aggregate household income in a year?",
                 "type": "radio",
                 "answer": {
                   "entry": null,
@@ -172,7 +175,7 @@
                 "questions": [
                   {
                     "id": "2020-03-d-01-02-a",
-                    "text": "What information or tools do you provide families with so they can track cost sharing?",
+                    "label": "What information or tools do you provide families with so they can track cost sharing?",
                     "type": "text_long",
                     "answer": {
                       "entry": null
@@ -202,7 +205,7 @@
                   },
                   {
                     "id": "2020-03-d-01-02-b",
-                    "text": "Who tracks cost sharing?",
+                    "label": "Who tracks cost sharing?",
                     "type": "text_long",
                     "answer": {
                       "entry": null
@@ -233,7 +236,7 @@
               },
               {
                 "id": "2020-03-d-01-03",
-                "text": "How are healthcare providers notified that they shouldn’t charge families once families have reached the 5% cap?",
+                "label": "How are healthcare providers notified that they shouldn’t charge families once families have reached the 5% cap?",
                 "type": "text_long",
                 "answer": {
                   "entry": null
@@ -256,7 +259,7 @@
               },
               {
                 "id": "2020-03-d-01-04",
-                "text": "Approximately how many families exceeded the 5% cap in the last federal fiscal year?",
+                "label": "Approximately how many families exceeded the 5% cap in the last federal fiscal year?",
                 "type": "text_long",
                 "answer": {
                   "entry": null
@@ -279,7 +282,7 @@
               },
               {
                 "id": "2020-03-d-01-05",
-                "text": "Have you assessed the effects of charging premiums and enrollment fees on whether eligible families enroll in CHIP?",
+                "label": "Have you assessed the effects of charging premiums and enrollment fees on whether eligible families enroll in CHIP?",
                 "type": "radio",
                 "answer": {
                   "entry": null,
@@ -306,7 +309,7 @@
                 "questions": [
                   {
                     "id": "2020-03-d-01-05-a",
-                    "text": "What did you find in your assessment?",
+                    "label": "What did you find in your assessment?",
                     "type": "text_long",
                     "answer": {
                       "entry": null
@@ -332,7 +335,7 @@
               },
               {
                 "id": "2020-03-d-01-06",
-                "text": "Have you assessed the effects of charging co-payments and other out-of-pocket fees on whether enrolled families use CHIP services?",
+                "label": "Have you assessed the effects of charging co-payments and other out-of-pocket fees on whether enrolled families use CHIP services?",
                 "type": "radio",
                 "answer": {
                   "entry": null,
@@ -359,7 +362,7 @@
                 "questions": [
                   {
                     "id": "2020-03-d-01-06-a",
-                    "text": "What did you find in your assessment?",
+                    "label": "What did you find in your assessment?",
                     "type": "text_long",
                     "answer": {
                       "entry": null
@@ -385,7 +388,7 @@
               },
               {
                 "id": "2020-03-d-01-07",
-                "text": "You indicated in Section 1 that you changed your cost sharing requirements in the past federal fiscal year. How are you monitoring the impact of these changes on whether families apply, enroll, disenroll, and use CHIP health services? What have you found when monitoring the impact?",
+                "label": "You indicated in Section 1 that you changed your cost sharing requirements in the past federal fiscal year. How are you monitoring the impact of these changes on whether families apply, enroll, disenroll, and use CHIP health services? What have you found when monitoring the impact?",
                 "type": "text_long",
                 "interactive_conditional": "In addition to hiding this question if 2020-03-d-01-01 is no, this should also be hidden unless the answer to 2020-01-a-03-08 OR 2020-01-a-04-08 is yes. Logic across sections has to be handled manually.",
                 "noninteractive_conditional": "See interactive conditional.",
@@ -411,7 +414,7 @@
               },
               {
                 "id": "2020-03-d-01-08",
-                "text": "Anything else you’d like to add that wasn’t already covered?",
+                "label": "Anything else you’d like to add that wasn’t already covered?",
                 "type": "text_long",
                 "answer": {
                   "entry": null

@@ -1,7 +1,7 @@
 import React from 'react'
 import PageInfo from "./components/Header/PageInfo"
 import { Section } from './components/Section/Section'
-import data from "./data/basic.json"
+import data from "./data/section3.json"
 
 import './App.css'
 
@@ -13,7 +13,7 @@ const App = _ => {
           <PageInfo />
           <div className="print-only">
           </div>
-          <Section {...data[0][0]}/>
+          <Section {...data.section} />
         </div>
       </div>
     </div>
